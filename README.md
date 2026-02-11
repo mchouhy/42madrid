@@ -9,6 +9,7 @@ The purpose of this repository is to document my learning path in C programming,
 ## Repository Structure
 
 piscine/ Projects and exercises from the 42 Piscine
+
 cursus/ Core Curriculum projects (libft, ft_printf, get_next_line, etc.)
 
 Each project is organized in its own folder and follows the coding standards and constraints required by 42.
