@@ -1,4 +1,4 @@
-# 42madrid
+# 42 madrid
 
 This repository is a monorepo containing my projects developed at 42 Madrid, including exercises from the Piscine and projects from the Core Curriculum (Cursus).
 
