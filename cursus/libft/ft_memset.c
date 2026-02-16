@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mchouhy- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/14 11:30:39 by mchouhy-          #+#    #+#             */
-/*   Updated: 2026/02/14 11:33:32 by mchouhy-         ###   ########.fr       */
+/*   Created: 2026/02/15 11:38:11 by mchouhy-          #+#    #+#             */
+/*   Updated: 2026/02/15 12:22:15 by mchouhy-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	if (c > 31 && c < 127)
-		return (1);
-	return (0);
+	size_t	i;
+
+	i = 0;
+	while(s[i] <= n)
+		s[i] = c;
+	return (*s);
+}
+
+#include <stdio.h>
+void	main(void)
+{
+	char arr[6];
+	printf("El resultado es: %d", *ft_memset(arr, 'A', 5));
 }
